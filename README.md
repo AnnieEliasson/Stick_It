@@ -1,5 +1,4 @@
 # Stick_It
-## Note App
 
 ## Vad är stick It?
 stick It är en noterings app där du kan skapa noteringar under olika kategorier.

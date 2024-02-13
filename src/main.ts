@@ -1,11 +1,11 @@
 
-import {data, userInput} from "./interface.js"
+import {userInput} from "./interface.js"
 import {display} from "./display_cards.js"
 import { createNote } from "./create_cards.js";
 import { createUserTabs} from "./createUserTabs.js"
-import { deleteNote } from "./delete_cards.js";
 import { removeAllNotesFromTab } from "./remove_all_notes.js";
 
+export let tabs: string[]
 
 // input fields
 const textField = document.getElementById('text-field') as HTMLInputElement;
@@ -21,7 +21,7 @@ postBtn.addEventListener('click', gatherInfo)
 
         let retString = localStorage.getItem("tabs") 
         let retArray = JSON.parse(retString)
-        export let tabs = retArray
+        tabs = retArray
         
         //tabs = ['Tab'] // <-- Denhär
 
@@ -61,7 +61,6 @@ function gatherInfo(){
     
 
     textField.value = ""
-    //username.value = ""
     
 }
 

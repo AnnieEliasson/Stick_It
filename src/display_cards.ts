@@ -12,8 +12,6 @@ export async function display(user: string): Promise<void> {
 
   editDate(data.notes)
 
-
-  console.log(data.notes);
   
 
 
