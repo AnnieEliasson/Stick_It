@@ -1,0 +1,8 @@
+.time-line{
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent, $border-color,rgb(171, 168, 25), rgb(180, 95, 95));
+}

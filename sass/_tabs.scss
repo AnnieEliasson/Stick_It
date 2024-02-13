@@ -1,0 +1,41 @@
+.tabs{
+    height: 30px;
+    width: 410px;
+    //border: red 1px solid;
+    position: absolute;
+    top: -32px;
+    left: 10px;
+    display: flex;
+    list-style: none;
+
+    .tab{
+        height: 30px;
+        //width: 100px;
+        @include cards;
+        border-bottom: 0;
+        border-radius: 5px 5px 0 0;
+        background-color: transparent;
+        padding: 0px 20px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        color: #b4c8c4;
+        cursor: pointer;
+        
+
+        &:hover{
+            color: white;
+            background-color: rgb(77, 77, 77);
+            
+        }
+    }
+
+    .active{
+        background-color: $username-color;
+        color: rgb(0, 0, 0);
+        
+    }
+}

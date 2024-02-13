@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+      "lib": ["es6", "dom", "es2016"],
+      "module": "ES2020",
+      "target": "ES5",
+      "outDir": "./dist",
+  },
+  "include": ["./src"]
+}

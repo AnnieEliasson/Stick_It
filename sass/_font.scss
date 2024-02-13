@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+$MainTextFont: 'Annie Use Your Telescope', cursive;
+
+body{
+    font-family: $MainTextFont;
+    color: $light-text-color;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 50px;
+}
+
+#text-field, #username{
+    font-family: $MainTextFont;
+    font-size: 1.3rem;
+    //letter-spacing: 2px;
+}
+
+.button{
+    font-family: $MainTextFont;
+    font-size: 3rem; 
+}
+
+.post-card{
+    color: $light-text-color;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    //letter-spacing: 2px;
+
+    &-foot{
+        font-size: 1.2rem;
+
+        .username{
+            color: $username-color;
+            font-size: 1.6rem;
+        }
+    }
+}

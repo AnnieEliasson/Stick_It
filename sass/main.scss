@@ -1,0 +1,52 @@
+
+
+@import 'reset';
+@import 'colors';
+@import 'font';
+@import 'mixins';
+@import 'post-cards';
+@import 'time-line';
+@import 'create-post-card';
+@import 'tabs';
+
+
+body {
+    //background: radial-gradient( circle, $bg-gradient-light, $bg-gradient-dark);
+    //background-image: url('../public/5053309.jpg');
+    background-color: rgb(38, 38, 38);
+    //height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    height: auto;
+
+    .post-card-container{
+        width: 610px;
+        min-height: 100vh;
+        padding-left: 70px;
+        padding-bottom: 30px;
+        //overflow-y:auto;
+        position: relative;
+    
+        /* &::-webkit-scrollbar {
+            display: none;
+          } */
+    }
+
+    .right-side-container{
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
+
+
