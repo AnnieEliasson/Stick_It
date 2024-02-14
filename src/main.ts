@@ -19,11 +19,15 @@ const postBtn = document.getElementById('post-btn');
 // gather info when clicking on post button
 postBtn.addEventListener('click', gatherInfo)
 
+
         let retString = localStorage.getItem("tabs") 
         let retArray = JSON.parse(retString)
         tabs = retArray
         
-        //tabs = ['Tab'] // <-- Denhär
+        if (localStorage.getItem("tabs") === null) {
+        tabs = []
+        }
+        
 
 createUserTabs(tabs)
 function gatherInfo(){
